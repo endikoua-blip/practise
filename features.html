@@ -1,17 +1,70 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Функції та Переваги | Професійна Веб-розробка</title>
-  <meta name="description" content="Відкрийте для себе комплексні функції веб-розробки, включаючи підтримку 24/7, швидку доставку та методологію Client-first.">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fendikouas9697back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsweet - Створюємо вражаючі сайти для стартапів</title>
+    <meta name="description" content="Finsweet створює сучасні веб-сайти для стартапів з ефективним дизайном та швидкодією.">
+    <link rel="canonical" href="https://yourdomain.com/">
+    <link rel="icon" href="assets/images/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="assets/images/mstile-150x150.png">
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      :root {
+          --color-dark-grey: #282938;
+          --color-white: #FFFFFF;
+          --bg-white: #FFFFFF;
+          --fs-body: 14px;
+          --fs-title: 28px;
+      }
+      body {
+          font-family: 'Poppins', 'Segoe UI', sans-serif;
+          font-size: var(--fs-body);
+          line-height: 1.6;
+          color: var(--color-dark-grey);
+          background-color: var(--bg-white);
+          overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-size: var(--fs-title);
+          color: var(--color-dark-grey);
+          line-height: 1.2;
+      }
+      a {
+          text-decoration: none;
+          color: inherit;
+          cursor: pointer;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+      .container {
+          width: 100%;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 16px;
+      }
+    </style>
+    <meta property="og:title" content="Finsweet — Створюємо вражаючі сайти для стартапів">
+    <meta property="og:description" content="Finsweet створює сучасні веб-сайти для стартапів, що виділяються дизайном, швидкодією і зручністю.">
+    <meta property="og:url" content="http://localhost/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Finsweet — Створюємо вражаючі сайти для стартапів">
+    <meta name="twitter:description" content="Finsweet створює сучасні веб-сайти для стартапів, що виділяються дизайном, швидкодією і зручністю.">
+    <meta name="twitter:site" content="@finsweet_example">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
         <div class="header-content">
-            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo">
+            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo" fetchpriority="high">
             <nav class="nav-menu" id="navMenu">
                 <div class="nav-overlay" id="navOverlay"></div>
                 <div class="nav-items">
@@ -19,7 +72,7 @@
                     <a href="aboutus.html" class="nav-item">Про нас</a>
                     <a class="nav-item active">Можливості</a>
                     <a href="price.html" class="nav-item">Ціни</a>
-                    <a href="#" class="nav-item">FAQ</a>
+                    <a href="faq.html" class="nav-item">FAQ</a>
                     <a href="blog.html" class="nav-item">Блог</a>
                     <a class="nav-item contact-btn" data-open-modal>Зв’язатися з нами</a>
                 </div>
@@ -43,13 +96,11 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="assets/images/features/Feature Hero Illustration.svg" alt="Ілюстрація функцій сайту">
+            <img src="assets/images/features/FeatureHeroIllustration.svg" alt="Ілюстрація функцій сайту">
         </div>
     </div>
 </section>
-
-<!-- Benefits Section -->
-<section class="benefits-section benefits-section--spaced animate-on-scroll">
+<div class="benefits-section benefits-section--spaced animate-on-scroll">
     <div class="stats-section">
         <div class="stats-number-wrapper">
             <div class="stats-number">100.000+</div>
@@ -57,23 +108,23 @@
         </div>
         <div class="logos-grid">
             <div class="logo-item">
-                <img src="assets/images/about-us/Logo 1.svg" alt="Логотип партнера 1">
+                <img src="assets/images/about-us/Logo1.svg" alt="Логотип партнера 1">
             </div>
             <div class="logo-item">
-                <img src="assets/images/about-us/Logo 2.svg" alt="Логотип партнера 2">
+                <img src="assets/images/about-us/Logo2.svg" alt="Логотип партнера 2">
             </div>
             <div class="logo-item">
-                <img src="assets/images/about-us/Logo 3.svg" alt="Логотип партнера 3">
+                <img src="assets/images/about-us/Logo3.svg" alt="Логотип партнера 3">
             </div>
             <div class="logo-item">
-                <img src="assets/images/about-us/Logo 4.svg" alt="Логотип партнера 4">
+                <img src="assets/images/about-us/Logo4.svg" alt="Логотип партнера 4">
             </div>
             <div class="logo-item">
-                <img src="assets/images/about-us/Logo 5.svg" alt="Логотип партнера 5">
+                <img src="assets/images/about-us/Logo5.svg" alt="Логотип партнера 5">
             </div>
         </div>
     </div>
-</section>
+</div>
 <section class="animate-on-scroll">
 <h2 class="benefits-title">Переваги роботи з нами</h2>
 <div class="benefits-grid">
@@ -92,7 +143,7 @@
         </p>
     </div>
     <div class="benefit-card">
-        <img src="assets/images/about-us/Icon (1).svg" alt="Іконка підтримки" class="benefit-icon">
+        <img src="assets/images/about-us/Icon_1.svg" alt="Іконка підтримки" class="benefit-icon">
         <h3 class="benefit-title">Підтримка 24/7</h3>
         <p class="benefit-description">
             Ми завжди поруч — оперативно допомагаємо з будь-якими питаннями щодо роботи вашого сайту.
@@ -112,7 +163,6 @@
         <img src="assets/images/features/man-explaining-problems-to-faceless-psychologist-7176030.webp" alt="Командна співпраця" class="about-hero-image">
     </div>
 </section>
-
 <section class="mission-vision-section animate-on-scroll">
     <div class="vision-item">
         <div class="vision-text">
@@ -125,7 +175,6 @@
         <img src="assets/images/features/photo-of-man-holding-a-book-927022.webp" alt="Ілюстрація бачення" class="vision-image">
     </div>
 </section>
-
 <section class="about-hero-section animate-on-scroll">
     <div class="about-hero-content">
         <div class="about-hero-text">
@@ -138,7 +187,6 @@
         <img src="assets/images/features/a-man-working-in-a-call-center-8867431.webp" alt="Підтримка клієнтів" class="about-hero-image">
     </div>
 </section>
-
 <section class="mission-vision-section mission-vision-section--featuresbg animate-on-scroll">
     <div class="vision-item">
         <div class="vision-text">
@@ -148,15 +196,14 @@
                 Ми працюємо швидко та злагоджено — стандартний сайт до п’яти сторінок буде готовий менш ніж за тиждень.
             </p>
         </div>
-        <img src="assets/images/features/Group 2543.webp" alt="Ілюстрація швидкості" class="vision-image">
+        <img src="assets/images/features/Group2543.webp" alt="Ілюстрація швидкості" class="vision-image">
     </div>
 </section>
-
 <section class="section-wrapper faq-section animate-on-scroll">
     <div class="faq-content">
         <div class="faq-intro">
             <h2 class="section-title">Часті запитання</h2>
-            <a href="#" class="faq-contact-link">Звʼяжіться з нами, щоб дізнатися більше</a>
+            <a class="faq-contact-link" data-open-modal>Звʼяжіться з нами, щоб дізнатися більше</a>
         </div>
         <div class="faq-list">
             <div class="faq-item active animate-item">
@@ -211,7 +258,6 @@
             </div>
         </div>
     </div>
-
 </section>
       <footer class="footer animate-on-scroll">
         <div class="footer-content">
@@ -247,7 +293,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-label">Зателефонуйте</div>
-                        <div class="contact-value"><a href="tel:0927 6277 28525">0927 6277 28525</a></div>
+                        <div class="contact-value"><a href="tel:0927627728525">0927 6277 28525</a></div>
                     </div>
                 </div>
             </div>
@@ -260,7 +306,7 @@
                     <a href="aboutus.html" class="footer-nav-item">Про нас</a>
                     <a class="footer-nav-item">Можливості</a>
                     <a href="price.html" class="footer-nav-item">Ціни</a>
-                    <a href="#" class="footer-nav-item">FAQ</a>
+                    <a href="faq.html" class="footer-nav-item">FAQ</a>
                     <a href="blog.html" class="footer-nav-item">Блог</a>
                     <a href="policy.html" class="footer-nav-item">Політика конфіденційності</a>
                 </nav>
@@ -286,20 +332,20 @@
           <div class="form-group">
             <label for="subject1">
               Тема звернення
-              <div class="tooltip-wrapper">
+            <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Опишіть, що вас цікавить (наприклад: "Landing page для стартапу")</span>
-              </div>
-            </label>
+            </span>
+              </label>
             <input type="text" id="subject1" name="subject1" placeholder="Що вас цікавить?" required>
           </div>
           <div class="form-group">
             <label for="subject2">
               Категорія
-              <div class="tooltip-wrapper">
+              <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Оберіть категорію вашого запиту</span>
-              </div>
+              </span>
             </label>
             <select id="subject2" name="subject2" required>
               <option value="">Оберіть категорію</option>
@@ -318,10 +364,10 @@
           <div class="form-group full-width">
             <label for="message">
               Повідомлення
-              <div class="tooltip-wrapper">
+              <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Детально опишіть ваш запит або питання</span>
-              </div>
+              </span>
             </label>
             <textarea id="message" name="message" placeholder="Напишіть ваше запитання тут" required></textarea>
           </div>

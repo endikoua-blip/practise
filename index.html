@@ -59,12 +59,12 @@
     <meta name="twitter:site" content="@finsweet_example">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fendikouas9697back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo">
+            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo" fetchpriority="high">
             <nav class="nav-menu" id="navMenu">
                 <div class="nav-overlay" id="navOverlay"></div>
                 <div class="nav-items">
@@ -99,7 +99,7 @@
                 <h1 class="hero-title">Створюємо вражаючі сайти для молодих стартапів</h1>
                 <p class="hero-description">Ми допомагаємо бізнесам розвиватися онлайн, створюючи сучасні, швидкі та ефективні сайти.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Наші роботи</a>
+                    <a href="ourworks.html" class="btn-primary">Наші роботи</a>
                     <a href="price.html" class="btn-secondary">
                         Переглянути ціни
                         <img src="assets/images/img_arrow_1.svg" alt="Стрілка">
@@ -115,7 +115,7 @@
         <div class="work-content">
             <div class="work-intro">
                 <h2 class="section-title">Як ми працюємо</h2>
-                <p class="section-description">Ми проходимо всі етапи — від стратегії до розробки, щоб створити ідеальний продукт для вас.</p>
+                <p><span class="contact-text">Ми проходимо всі етапи — від стратегії до розробки, щоб створити ідеальний продукт для вас.</span></p>
                 <a class="view-more-link" data-open-modal>
                     Зв’яжіться з нами
                     <img src="assets/images/img_arrow_2.svg" alt="Стрілка">
@@ -149,7 +149,7 @@
         <div class="container">
             <div class="projects-header">
                 <h2 class="section-title">Наші проєкти</h2>
-                <a href="#" class="view-more-link">
+                <a href="ourwork.html" class="view-more-link">
                     Переглянути більше
                     <img src="assets/images/img_arrow_1_blue_gray_900_01.svg" alt="Стрілка" width="24" height="1">
                 </a>
@@ -158,16 +158,16 @@
                 <div class="project-card main animate-item">
                     <h3 class="project-title">Дизайн сайту Workhub Office</h3>
                     <p class="project-description">Сучасний корпоративний сайт з фокусом на UX/UI.</p>
-                    <a href="#" class="project-link">
-                        Переглянути проєкт
+                    <a href="ourwork.html" class="project-link">
+                        <span class="yellow-work-link">Переглянути проєкт</span>
                         <img src="assets/images/img_arrow_2_amber_200_01.svg" alt="Стрілка" width="24" height="1">
                     </a>
                 </div>
                 <div class="projects-right">
                     <div class="project-card unisaas animate-item">
                         <h3 class="project-title">Дизайн сайту Unisaas</h3>
-                        <a href="#" class="project-link">
-                            Переглянути портфоліо
+                        <a href="ourwork.html" class="project-link">
+                            <span class="yellow-work-link">Переглянути портфоліо</span>
                             <img src="assets/images/img_arrow_2_amber_200_01.svg" alt="Стрілка" width="24" height="1">
                         </a>
                     </div>
@@ -252,46 +252,45 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-author-info">
-                  <img src="https://i.pravatar.cc/150?img=1" alt="Дженні Вілсон" class="author-avatar">
+                  <img src="assets/images/client0.webp" alt="Дженні Вілсон" class="author-avatar">
                   <div>
                     <div class="author-name">Дженні Вілсон</div>
-                    <div class="author-title">Віце-президент</div>
+                    <div class="author-title">Генеральний директор</div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-author-info">
-                  <img src="https://i.pravatar.cc/150?img=12" alt="Олександр Петренко" class="author-avatar">
+                  <img src="assets/images/client1.webp" alt="Олександр Петренко" class="author-avatar">
                   <div>
                     <div class="author-name">Олександр Петренко</div>
-                    <div class="author-title">CEO, Tech Startup</div>
+                    <div class="author-title">Генеральний директор</div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-author-info">
-                  <img src="https://i.pravatar.cc/150?img=5" alt="Марія Коваленко" class="author-avatar">
+                  <img src="assets/images/client2.webp" alt="Марія Коваленко" class="author-avatar">
                   <div>
                     <div class="author-name">Марія Коваленко</div>
-                    <div class="author-title">Маркетинг-директор</div>
+                    <div class="author-title">Директор з маркетингу</div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-author-info">
-                  <img src="https://i.pravatar.cc/150?img=33" alt="Ігор Мельник" class="author-avatar">
+                  <img src="assets/images/client3.webp" alt="Ігор Мельник" class="author-avatar">
                   <div>
                     <div class="author-name">Ігор Мельник</div>
-                    <div class="author-title">Product Manager</div>
+                    <div class="author-title">Менеджер продукту</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="testimonial-nav">
-            <button class="nav-btn nav-btn-prev" id="prevBtn"></button>
-            <button class="nav-btn nav-btn-next" id="nextBtn"></button>
-          </div>
+            <button class="nav-btn nav-btn-prev" id="prevBtn" aria-label="Попередній відгук"></button>
+            <button class="nav-btn nav-btn-next" id="nextBtn" aria-label="Наступний відгук"></button>
         </div>
       </div>
     </div>
@@ -300,7 +299,7 @@
         <div class="faq-content">
             <div class="faq-intro">
                 <h2 class="section-title">Часті запитання</h2>
-                <a href="#" class="faq-contact-link">Зв’яжіться з нами, щоб дізнатися більше</a>
+                <a class="faq-contact-link" data-open-modal>Зв’яжіться з нами, щоб дізнатися більше</a>
             </div>
             <div class="faq-list">
                 <div class="faq-item active animate-item">
@@ -361,7 +360,7 @@
         <div class="contact-bg" aria-hidden="true"></div>
         <div class="contact-overlay" aria-hidden="true"></div>
         <div class="contact-intro">
-            <h2 class="section-title">Створюємо вражаючі сайти для стартапів</h2>
+            <h2 class="section-title"><span class="contact-title">Створюємо вражаючі сайти для стартапів</span></h2>
             <p class="section-description">Ми допоможемо втілити вашу ідею в сучасний вебпродукт — швидко, красиво та якісно.</p>
         </div>
         <form class="contact-form animate-item" id="contactFormSection">
@@ -396,7 +395,7 @@
                     <time class="blog-date" datetime="2022-01-19">19 січня 2022</time>
                     <h3 class="blog-title">Як один користувач Webflow виріс з $0 до $100K за 14 місяців</h3>
                     <p class="blog-excerpt">Дізнайтеся, як зміна підходу до Webflow допомогла йому збільшити продажі.</p>
-                    <a href="#" class="blog-link">
+                    <a href="blog2.html" class="blog-link">
                         Читати далі
                         <img src="assets/images/img_arrow_1_blue_gray_900_01.svg" alt="Стрілка">
                     </a>
@@ -406,7 +405,7 @@
                     <time class="blog-date" datetime="2022-01-19">19 січня 2022</time>
                     <h3 class="blog-title">Як один користувач Webflow виріс з $0 до $100K за 14 місяців</h3>
                     <p class="blog-excerpt">Дізнайтеся, як Webflow змінив його підхід до бізнесу.</p>
-                    <a href="#" class="blog-link">
+                    <a href="blog3.html" class="blog-link">
                         Читати далі
                         <img src="assets/images/img_arrow_1_blue_gray_900_01.svg" alt="Стрілка">
                     </a>
@@ -416,7 +415,7 @@
                     <time class="blog-date" datetime="2022-01-19">19 січня 2022</time>
                     <h3 class="blog-title">Як один користувач Webflow виріс з $0 до $100K за 14 місяців</h3>
                     <p class="blog-excerpt">Дізнайтеся, як Webflow допоміг покращити продажі та ефективність.</p>
-                    <a href="#" class="blog-link">
+                    <a href="blog4.html" class="blog-link">
                         Читати далі
                         <img src="assets/images/img_arrow_1_blue_gray_900_01.svg" alt="Стрілка">
                     </a>
@@ -471,7 +470,7 @@
                     <a href="aboutus.html" class="footer-nav-item">Про нас</a>
                     <a href="features.html" class="footer-nav-item">Можливості</a>
                     <a href="price.html" class="footer-nav-item">Ціни</a>
-                    <a href="#" class="footer-nav-item">FAQ</a>
+                    <a href="faq.html" class="footer-nav-item">FAQ</a>
                     <a href="blog.html" class="footer-nav-item">Блог</a>
                     <a href="policy.html" class="footer-nav-item">Політика конфіденційності</a>
                 </nav>
@@ -543,7 +542,7 @@
     </div>
   </div>
     <button class="scroll-to-top" id="scrollToTop" aria-label="Повернутись на верх"></button>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/script.js"></script>
 </body>

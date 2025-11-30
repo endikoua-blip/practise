@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finsweet — Створюємо вражаючі сайти для стартапів</title>
+    <title>Finsweet - Створюємо вражаючі сайти для стартапів</title>
+    <meta name="description" content="Finsweet створює сучасні веб-сайти для стартапів з ефективним дизайном та швидкодією.">
+    <link rel="canonical" href="https://yourdomain.com/">
+    <link rel="icon" href="assets/images/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="assets/images/mstile-150x150.png">
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      :root {
+          --color-dark-grey: #282938;
+          --color-white: #FFFFFF;
+          --bg-white: #FFFFFF;
+          --fs-body: 14px;
+          --fs-title: 28px;
+      }
+      body {
+          font-family: 'Poppins', 'Segoe UI', sans-serif;
+          font-size: var(--fs-body);
+          line-height: 1.6;
+          color: var(--color-dark-grey);
+          background-color: var(--bg-white);
+          overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-size: var(--fs-title);
+          color: var(--color-dark-grey);
+          line-height: 1.2;
+      }
+      a {
+          text-decoration: none;
+          color: inherit;
+          cursor: pointer;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+      .container {
+          width: 100%;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 16px;
+      }
+    </style>
+    <meta property="og:title" content="Finsweet — Створюємо вражаючі сайти для стартапів">
+    <meta property="og:description" content="Finsweet створює сучасні веб-сайти для стартапів, що виділяються дизайном, швидкодією і зручністю.">
+    <meta property="og:url" content="http://localhost/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Finsweet — Створюємо вражаючі сайти для стартапів">
+    <meta name="twitter:description" content="Finsweet створює сучасні веб-сайти для стартапів, що виділяються дизайном, швидкодією і зручністю.">
+    <meta name="twitter:site" content="@finsweet_example">
     <link rel="stylesheet" href="assets/styles.css">
-    <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fendikouas9697back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo">
+            <img src="assets/images/img_logo.svg" alt="Finsweet" class="logo" fetchpriority="high">
             <nav class="nav-menu" id="navMenu">
                 <div class="nav-overlay" id="navOverlay"></div>
                 <div class="nav-items">
@@ -140,7 +194,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-label">Зателефонуйте</div>
-                        <div class="contact-value"><a href="tel:0927 6277 28525">0927 6277 28525</a></div>
+                        <div class="contact-value"><a href="tel:0927627728525">0927 6277 28525</a></div>
                     </div>
                 </div>
             </div>
@@ -153,7 +207,7 @@
                     <a href="aboutus.html" class="footer-nav-item">Про нас</a>
                     <a href="features.html" class="footer-nav-item">Можливості</a>
                     <a href="price.html" class="footer-nav-item">Ціни</a>
-                    <a href="#" class="footer-nav-item">FAQ</a>
+                    <a href="faq.html" class="footer-nav-item">FAQ</a>
                     <a href="blog.html" class="footer-nav-item">Блог</a>
                     <a class="footer-nav-item">Політика конфіденційності</a>
                 </nav>
@@ -179,20 +233,20 @@
           <div class="form-group">
             <label for="subject1">
               Тема звернення
-              <div class="tooltip-wrapper">
+            <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Опишіть, що вас цікавить (наприклад: "Landing page для стартапу")</span>
-              </div>
-            </label>
+            </span>
+              </label>
             <input type="text" id="subject1" name="subject1" placeholder="Що вас цікавить?" required>
           </div>
           <div class="form-group">
             <label for="subject2">
               Категорія
-              <div class="tooltip-wrapper">
+              <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Оберіть категорію вашого запиту</span>
-              </div>
+              </span>
             </label>
             <select id="subject2" name="subject2" required>
               <option value="">Оберіть категорію</option>
@@ -211,10 +265,10 @@
           <div class="form-group full-width">
             <label for="message">
               Повідомлення
-              <div class="tooltip-wrapper">
+              <span class="tooltip-wrapper">
                 <span class="tooltip-icon">?</span>
                 <span class="tooltip-text">Детально опишіть ваш запит або питання</span>
-              </div>
+              </span>
             </label>
             <textarea id="message" name="message" placeholder="Напишіть ваше запитання тут" required></textarea>
           </div>
