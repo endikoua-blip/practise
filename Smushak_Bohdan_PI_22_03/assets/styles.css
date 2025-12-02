@@ -2353,6 +2353,7 @@ img {
     align-items: center;
     text-align: center;
     gap: 32px;
+    background-color: var(--bg-white);
 }
 .error-code {
     font-size: 96px;
