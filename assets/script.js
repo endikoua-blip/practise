@@ -81,7 +81,7 @@ window.addEventListener('scroll', () => {
     }
 });
 (function() {
-    emailjs.init("xLk9hvLQW6-8Q849j");
+    emailjs.init("___________");
 })();
 const openModalBtns = document.querySelectorAll('[data-open-modal]');
 const closeModalBtn = document.getElementById('closeModalBtn');
@@ -420,4 +420,5 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
         const newTheme = e.matches ? 'dark' : 'light';
         htmlElement.setAttribute('data-theme', newTheme);
     }
+
 });
